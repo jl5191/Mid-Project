@@ -12,7 +12,7 @@
       </div>
         <p class="message">{ message }</p>
     </div>
-    <categorize></categorize>
+
 
   </div>
 
