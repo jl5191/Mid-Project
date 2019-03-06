@@ -1,22 +1,35 @@
 <categorize>
-<form id="aform">
-<select id="mymenu" size="1">
-<option value="nothing" selected="selected">Select a site</option>
-<option value="http://www.dynamicdrive.com">Dynamic Drive</option>
-<option value="http://www.codingforums.com">Coding Forums</option>
-<option value="http://www.cssdrive.com">CSS Drive</option>
-</select>
-</form>
+  <div>
+    <div>
+        <p>Which </p>
+        <select onchange={updateCategory}>
+            <option  value="">---</option>
+            <option refs="work" value="work">work</option>
+            <option value="love">Love</option>
+            <option value="life">life</option>
+        </select>
+    </div>
+        <p class="message1">{ message1 }</p>
+  <div>
 
-<script type="text/javascript">
+<script>
+this.message1 = ""
+this.category = ""
 
-var selectmenu=document.getElementById("mymenu")
-selectmenu.onchange=function(){ //run some code when "onchange" event fires
- var chosenoption=this.options[this.selectedIndex] //this refers to "selectmenu"
- if (chosenoption.value!="nothing"){
-  window.open(chosenoption.value, "", "") //open target site (based on option's value attr) in new window
- }
-}
+    updateCategory(){
+      this.category= event.target.value
+        if (this.category=="work"){
+          this.message1 = 'Now, start to think about one question that is related to ' + this.category;
+  ;
+          } else if (this.value=="love"){
+              this.message1 = 'Now, start to think about one question that is related to ' + this.category;
+                } else{
+                    this.message1 = 'Now, start to think about one question that is related to ' + this.category;
+                    }
+    }
+
+
+
 
 </script>
 </categorize>
