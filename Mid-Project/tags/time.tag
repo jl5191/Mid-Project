@@ -8,7 +8,7 @@
 <script>
 
     startPredict () {
-        this.time = opts.start || 10;
+        this.time = opts.start || 11;
     tick();
     if (this.time = 0){
 
