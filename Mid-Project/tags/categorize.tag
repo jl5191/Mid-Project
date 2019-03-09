@@ -1,7 +1,7 @@
 <categorize>
   <div>
     <div>
-        <p>Which </p>
+        <p>Select a main catergory of your question</p>
         <select onchange={updateCategory}>
             <option  value="">---</option>
             <option refs="work" value="work">work</option>
