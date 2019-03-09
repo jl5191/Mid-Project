@@ -2,27 +2,24 @@
   <div>
     <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick={ startPredict }>Start Predict</button>
   </div>
-  <p>Count Down: { time }</p>
+  <p>Count Down: { timeLimit }</p>
   <p></p>
 
 <script>
 
     startPredict () {
-        this.time = opts.start || 11;
+        this.timeLimit = opts.start || 11;
     tick();
-    if (this.time = 0){
 
-    }
     }
 
 
     tick() {
-         this.update({ time: --this.time })
+         if (this.timeLimit >= 1) {
+         this.update({ timeLimit: --this.timeLimit })
+         }
        }
          var timer = setInterval(this.tick, 1000)
-         this.on('unmount', function() {
-         clearInterval(timer)
-    })
 
 
 
