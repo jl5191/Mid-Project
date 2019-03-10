@@ -6,7 +6,7 @@
 
 <script>
 zzzz.numbers_i_like = [];
-    generate () {
+  generate () {
       this.arbitrary_number = Math.floor(Math.random()*100);
      };
 
@@ -15,12 +15,23 @@ zzzz.numbers_i_like = [];
            console.log('zzzz',zzzz.numbers_i_like)
           };
 
-    rid (e) {
-                  var t = zzzz.numbers_i_like.indexOf(e.item);
+  rid (e) {
+                  t = zzzz.numbers_i_like.indexOf(e.item);
                   zzzz.numbers_i_like.splice(t,1);
                   };
 
 
 </script>
 
+<style>
+button {
+         font-size: 1em;
+         padding-right: 0.4em;
+         margin-bottom: 1em;
+         border-radius: 0.25em;
+         background-color: coral;
+         border: 1px solid navy;
+         cursor: pointer;
+     }
+</style>
 </grozmite>

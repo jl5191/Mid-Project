@@ -25,4 +25,18 @@
 
 
 </script>
+
+<style>
+button {
+         font-size: 1em;
+         padding-right: 0.4em;
+         margin-bottom: 1em;
+         border-radius: 0.25em;
+         background-color: coral;
+         border: 1px solid navy;
+         cursor: pointer;
+     }
+</style>
+
+
 </time>
