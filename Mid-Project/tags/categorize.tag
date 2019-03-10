@@ -32,4 +32,10 @@ this.category = ""
 
 
 </script>
+<style>
+p {
+
+   font-family: 'Sofia';font-size: 30px;
+}
+</style>
 </categorize>

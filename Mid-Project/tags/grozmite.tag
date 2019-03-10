@@ -33,5 +33,9 @@ button {
          border: 1px solid navy;
          cursor: pointer;
      }
+p {
+
+        font-family: 'Sofia';font-size: 30px;
+     }
 </style>
 </grozmite>
