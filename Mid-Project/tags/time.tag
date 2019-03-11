@@ -1,11 +1,16 @@
 <time>
 <div class="container-fluid">
   <div class="row">
+    <div class="col-6">
+    <p>3. When you are ready, press the start button </p>
+  </div>
+  </div>
+  <div class="row">
       <div class="col-2">
 <button type="button" class="btn btn-light" onClick={ startPredict }>Start Predict</button>
   </div>
     <div class="col-3">
-  <p>Count Down: { timeLimit }</p>
+  <p class= "countdown">Count Down: { timeLimit }</p>
   <p></p>
     </div>
 </div>
@@ -40,13 +45,18 @@ button {
          border: 1px solid navy;
          cursor: pointer;
           font-family: 'Sofia';
-          margin-top:40px;
+
      }
 
 p {
 
   margin-top: 40px;
-   font-family: 'Sofia';font-size: 25px;
+   font-family: 'Sofia';font-size: 22px;
+}
+
+.countdown {
+
+  margin-top: -1px;
 }
 </style>
 

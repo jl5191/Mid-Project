@@ -1,5 +1,5 @@
 <answer>
-<div>
+  <div class="container-fluid">
   <button onclick={getanswer}>Get Your Answer</button>
   <p class="message2">{ message1 }</p>
   <li each={workAnswers}>{workAnswer}</li>
@@ -18,14 +18,17 @@ getanswer(){
              var myArrayLove = ['d', 'e', 'f'];
              var itemLove = myArrayLove[(Math.random()*myArrayLove.length)|0];
              this.message2 = itemLove;
-               } else{
+               } else{;
                    var myArrayLife = ['g', 'h', 'i'];
                    var itemLife = myArrayLife[(Math.random()*myArrayLife.length)|0];
                    this.message2 = itemLife;
                    }
    }
 
-
+getanswer(){
+  this.radomNumber = Math.floor(Math.random()*(this.workAnswers.length));
+  this.refs.workAnswer1 = this.workAnswers[this.randomNumber];
+}
 
 
 </script>

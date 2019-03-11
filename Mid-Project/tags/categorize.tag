@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-5">
-        <p>Select a main catergory of your question</p>
+        <p>2. Select a main catergory of your question</p>
         <select onchange={updateCategory}>
             <option  value="">---</option>
             <option refs="work" value="work">work</option>
@@ -42,7 +42,7 @@ this.category = ""
 <style>
 p {
 
-   font-family: 'Sofia';font-size: 25px;
+   font-family: 'Sofia';font-size: 22px;
 }
 </style>
 </categorize>

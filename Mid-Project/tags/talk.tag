@@ -4,7 +4,7 @@
 
   <div class="row">
       <div class="col-6">
-      <p>What's your name?</p>
+      <p>1. What's your name?</p>
     </div>
     <div class="col-6">
     <p class="message">{ message }</p>
@@ -46,7 +46,7 @@ button {
 
      p {
        margin-top: 50px;
-        font-family: 'Sofia';font-size: 25px;
+        font-family: 'Sofia';font-size: 22px;
      }
 </style>
 </talk>

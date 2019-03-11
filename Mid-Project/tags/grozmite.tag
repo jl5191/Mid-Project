@@ -1,6 +1,11 @@
 <grozmite>
   <div class="container-fluid">
     <div class="row">
+    <div class="col-6">
+      <p> 5. Solution </p>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-3">
       <button type="button" class="btn btn-light" onclick={generate}>Generate your lucky number</button>
     </div>
@@ -51,11 +56,11 @@ button {
 
 p {
 
-        font-family: 'Sofia';font-size: 25px;
+        font-family: 'Sofia';font-size: 22px;
      }
 .virtual1{
 
-  font-family: 'Sofia';font-size: 25px;
+  font-family: 'Sofia';font-size: 22px;
 }
 </style>
 </grozmite>
