@@ -36,7 +36,7 @@ observer.on('answer', (itemAnswer)=>{
 })
 
     startPredict () {
-        this.timeLimit = opts.start || 4;
+        this.timeLimit = opts.start || 11;
     tick();
 
     }

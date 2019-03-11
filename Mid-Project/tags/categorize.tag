@@ -10,7 +10,7 @@
             <option value="life">life</option>
         </select>
 
-        
+
 
       </div>
 
@@ -37,19 +37,19 @@ this.category = "";
       that.category= event.target.value
         if (that.category=="work"){
           that.message1 = 'Now, mentally start to think about one question that is related to ' + that.category;
-          var myArrayWork = ['a', 'b', 'c'];
+          var myArrayWork = ['Patience is the key.', 'Smart people know when to quit.', 'Negotiate with your boss.', 'Be willing to change.', 'Do not be afraid to fail.'];
           var itemWork = myArrayWork[(Math.random()*myArrayWork.length)|0];
           var itemAnswer = itemWork;
         }
         else if (that.category=="love"){
           that.message1 = 'Now, mentally start to think about one question that is related to ' + that.category;
-          var myArrayLove = ['d', 'e', 'f'];
+          var myArrayLove = ['Unfortunately not.', 'Give it some time.', 'Probably yes.', 'Wait for three weeks', 'Make a fresh new start.'];
           var itemLove = myArrayLove[(Math.random()*myArrayLove.length)|0];
           var itemAnswer = itemLove;
         }
         else{
           that.message1 = 'Now, mentally start to think about one question that is related to ' + that.category;
-          var myArrayLife = ['g', 'h', 'i'];
+          var myArrayLife = ['It comes and goes.', 'Be positive.', 'It is fine.', 'Talk to your friends.'];
           var itemLife = myArrayLife[(Math.random()*myArrayLife.length)|0];
           var itemAnswer = itemLife;
         }
