@@ -1,5 +1,5 @@
 <answer>
-  <div class="container-fluid">
+  <div >
   <button onclick={getanswer}>Get Your Answer</button>
   <p class="message2">{ message1 }</p>
   <li each={workAnswers}>{workAnswer}</li>
