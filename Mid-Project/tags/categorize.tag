@@ -11,10 +11,10 @@
         </select>
     </div>
        <div class="col-1"></div>
-        <div class="col-5">
+        <div class="col-4">
         <p class="message1">{ message1 }</p>
           </div>
-           <div class="col-1"></div>
+           <div class="col-2"></div>
     </div>
 
 
