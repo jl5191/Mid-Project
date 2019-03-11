@@ -6,26 +6,32 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style>
 	body {
-		background-image:url("images/background.png");
+		background-image:url("images/background1.png");
+		  background-size: cover;
 		background-repeat:no-repeat;
-		margin-top: 100px;
+		margin-top: 80px;
 		margin-left: 210px;
 	}
 
 	h1 {
-
 		     font-family: 'Sofia';font-size: 80px;
+				 margin-left: 250px;
+
 	}
 	</style>
 </head>
 <body>
+
 	<h1>Magic Book</h1>
 	<talk></talk>
 	<categorize></categorize>
 	<time></time>
-		<grozmite></grozmite>
+	<grozmite></grozmite>
+	<answer></answer>
+
 
 
 
@@ -33,12 +39,15 @@
 	<script src="tags/categorize.tag" type="riot/tag"></script>
   <script src="tags/time.tag" type="riot/tag"></script>
 	<script src="tags/grozmite.tag" type="riot/tag"></script>
+	<script src="tags/answer.tag" type="riot/tag"></script>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.8.1/riot+compiler.js"></script>
 
 	<script>
 		riot.mount('*');
 		var zzzz = riot.observable();
+		var category = riot.observable();
 	</script>
 
 

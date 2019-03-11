@@ -1,9 +1,14 @@
 <time>
-  <div>
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick={ startPredict }>Start Predict</button>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-2">
+<button type="button" class="btn btn-light" onClick={ startPredict }>Start Predict</button>
   </div>
+    <div class="col-3">
   <p>Count Down: { timeLimit }</p>
   <p></p>
+    </div>
+</div>
 
 <script>
 
@@ -32,13 +37,16 @@ button {
          padding-right: 0.4em;
          margin-bottom: 1em;
          border-radius: 0.25em;
-         background-color: coral;
          border: 1px solid navy;
          cursor: pointer;
+          font-family: 'Sofia';
+          margin-top:40px;
      }
+
 p {
 
-   font-family: 'Sofia';font-size: 30px;
+  margin-top: 40px;
+   font-family: 'Sofia';font-size: 25px;
 }
 </style>
 

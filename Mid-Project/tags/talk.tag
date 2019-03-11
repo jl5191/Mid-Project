@@ -1,17 +1,25 @@
 <talk>
-  <div>
+  <div class="container-fluid">
 
 
-    <div>
+  <div class="row">
+      <div class="col-6">
       <p>What's your name?</p>
-
+    </div>
+    <div class="col-6">
+    <p class="message">{ message }</p>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
       <div class="input-group mb-3">
         <input type="text" ref="name" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick={ sayHello }>Hello</button>
+        <button type="button" class="btn btn-light" onClick={ sayHello }>Hello</button>
       </div>
-        <p class="message">{ message }</p>
+      </div>
     </div>
+  </div>
 
 
   </div>
@@ -33,11 +41,12 @@ button {
          background-color: coral;
          border: 1px solid navy;
          cursor: pointer;
+         font-family: 'Sofia';
      }
 
      p {
-
-        font-family: 'Sofia';font-size: 30px;
+       margin-top: 50px;
+        font-family: 'Sofia';font-size: 25px;
      }
 </style>
 </talk>

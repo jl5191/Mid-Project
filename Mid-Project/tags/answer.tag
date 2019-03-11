@@ -1,52 +1,33 @@
 <answer>
+<div>
+  <button onclick={getanswer}>Get Your Answer</button>
+  <p class="message2">{ message1 }</p>
+  <li each={workAnswers}>{workAnswer}</li>
+  <li each={loveAnswers}>{loveAnswer}</li>
+  <li each={lifeAnswers}>{lifeAnswer}</li>
+</div>
+
+
 <script>
-
-
-var workanswers = [
- a;
- b;
- c;
- d;
- e
-]
-
-var loveanswers = [
- f;
- g;
- h;
- i;
- j
-]
-
-var life answers = [
- k;
- l;
- m;
- n;
- o
-]
-
-function getanswer () {
- if (that.category="work") function(){
-   var random = Math.floor(Math.random()*workanswers.length);
-   return = workanswers[random];
- }
-
- if (that.category="love") function(){
-   var random = Math.floor(Math.random()*loveanswers.length);
-   return = loveanswers[random];
- }
-
- if (that.category="life") function(){
-   var random = Math.floor(Math.random()*lifeanswers.length);
-   return = lifeanswers[random];
- }
-}
-
-
+getanswer(){
+       if (this.category=="work"){
+         var myArrayWork = ['a', 'b', 'c'];
+         var itemWork = myArrayWork[(Math.random()*myArrayWork.length)|0];
+         this.message2 = itemWork;
+         } else if (this.value=="love"){
+             var myArrayLove = ['d', 'e', 'f'];
+             var itemLove = myArrayLove[(Math.random()*myArrayLove.length)|0];
+             this.message2 = itemLove;
+               } else{
+                   var myArrayLife = ['g', 'h', 'i'];
+                   var itemLife = myArrayLife[(Math.random()*myArrayLife.length)|0];
+                   this.message2 = itemLife;
+                   }
+   }
 
 
 
 
 </script>
+
 </answer>
